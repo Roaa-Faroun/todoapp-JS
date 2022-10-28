@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+.container {
+    box-shadow: 0px 0px 6px 1px rgb(255, 219, 152);
+    ;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    width: 40vw;
+    background-color: #ddd;
+    margin: 40px auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.container>div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    border: 2px solid rgb(255, 219, 152);
+    border-color: transparent transparent rgb(255, 219, 152) transparent;
+    padding: 5px;
+    border-radius: 8px;
+    height: 25px;
+}
+
+input[type="text"] {
+    width: 350px;
+}
+
+input:focus {
+    border: 2px solid rgb(255, 219, 152);
+    outline: none
+}
+
+input[type="date"]:focus {
+    background-color: rgb(255, 219, 152);
+}
+
+.container>.btns {
+    width: 100%;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container>.btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+.container>.btns button:first-child {
+    background-color: rgb(145, 224, 125);
+}
+
+.container>.btns button:last-child {
+    background-color: rgb(186, 192, 185);
+}
+
+.error {
+    box-sizing: border-box;
+    margin: 10px auto;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ddd;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 6px 1px red;
+    border-radius: 10px;
+    display: none;
+}
+
+.error p{
+    margin-top: 10px;
+    color: black;
+}

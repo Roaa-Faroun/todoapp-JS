@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 20px auto;
+    background-color: darkcyan;
+    width: 20vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.container {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.container div:first-child {
+    color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+}
+
+.container>div:not(:first-child ) {
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+}
+
+.container>div * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>div .btn button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(175, 57, 57);
+    color: #fff;
+    border: none;
+    box-shadow: 0px 0px 1px 1px #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container div input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.container div .title {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>div *:first-child {
+    width: 50px;
+}
+
+.container>div *:nth-child(2) {
+    width: 100px;
+}
+
+.container>div *:nth-child(4) {
+    width: 30px;
+}
+
+.container>div *:nth-child(3) {
+    width: 50%;
+}
+
+.container div input[type="checkbox"]:checked {
+    accent-color: rgb(207, 238, 217);
+}
+
+.checked {
+    position: absolute;
+    height: 3px;
+    width: 95%;
+    background-color: rgb(214, 104, 104);
+    top: 50%;
+    left: 2.5%;
+    visibility: visible!important;
+    
+}
+
+.goForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+}
+
+.goForm .addBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    background-color: darkcyan;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.deleted {
+    color: red;
+    background-color: gray!important;
+}
+
+
+.SeeMore,
+.SeeLess{
+    background-color: transparent!important;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+}
+.SeeMore .moreBtn,
+.SeeLess .lessBtn{
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    padding:10px;
+    width: 100px!important;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
